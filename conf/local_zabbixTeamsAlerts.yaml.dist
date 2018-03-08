@@ -1,0 +1,6 @@
+teams_channel_url: https://outlook.office.com/webhook/xyzpdq123
+
+zabbix:
+    server: https://localhost/zabbix/api_jsonrpc.php
+    password: SEEkr3tp@ssw0rd
+    user: zabbixapi
