@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
-use Modern::Perl;
+use strict;
+use warnings;
 use Getopt::Long;
 use File::Basename;
 use FindBin qw($Bin);
