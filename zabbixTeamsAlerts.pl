@@ -8,12 +8,9 @@ use Hash::Merge 'merge';
 use Log::Log4perl;
 use Config::Any;
 use Pod::Usage;
-
 use LWP::UserAgent;
 use JSON;
 use Zabbix::Tiny;
-
-use Data::Printer;
 
 
 ### Bolierplate to setup loging.
