@@ -67,7 +67,7 @@ for (@$conf_any) {
 }
 
 # Set up logging.
-my $logdir   = $conf->{log}->{dir     } // "/$Bin/";
+my $logdir   = $conf->{log}->{dir     } // "/tmp/";
 my $logname  = $conf->{log}->{name    } // "$basename.log";
 my $logfile  = $opts{o} // $conf->{log}->{file    } // "/$logdir/$logname";
 my $loglevel = $conf->{log}->{level   } // 'DEBUG';
@@ -156,10 +156,10 @@ my $ua = LWP::UserAgent->new;
 
 
 my $msg = {
-    title => $title,
+    summary => $title,
     themeColor => $color,
     #correlationId => 'A947E42C-218E-11E8-8FFB-EC36E3E7E9F9',
-    text => "<span style='color:#$color'>$text</span>",
+    text => "<span style='color:#$color'>**$hosts_str:**</span> $trigger->{description}",
     #sections => [
     #    {
     #        text  => 'Another test message',
