@@ -107,7 +107,7 @@ $log->info("$basename has started");
 unless (defined $opts{t}){
     my $warn = "No trigger ID declared (-t xxxxx). Exiting...";
     $log->info($warn);
-    say "\n$warn\n";
+    print "\n$warn\n\n";
     pod2usage({
         -verbose => 1,
         -exitval => -1,
